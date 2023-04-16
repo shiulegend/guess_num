@@ -21,13 +21,13 @@ count = 0
 while True :
     count += 1 
     pwd = input('請輸入猜的數字 : ')
+    pwd = int (pwd)
     if pwd == random_num:
         print('你猜對了!')
         print('你猜了' , count , '次!')
         break
-    else :
-        if pwd > random_num:
+    elif pwd > random_num:
             print ('你猜的數字比答案大' )
-        elif pwd < random_num :
+    elif pwd < random_num :
             print ('你猜的數字比答案小')
-        print('你猜了' , count , '次!')
+    print('你猜了' , count , '次!')
